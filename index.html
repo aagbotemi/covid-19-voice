@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Gotu|Pacifico|Raleway|Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6629e20d42.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".home").addClass("animated bounce");
+        });
+    </script>
+    <title>COVID-19</title>
+</head>
+<body>
+    <div class="media-body">
+        <div class="header">
+        <nav class="nav">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#symptoms">Symptoms</a>
+          <a class="nav-link" href="#protection">Protection</a>
+          <a class="nav-link" href="#what-to-do">What to do</a>
+          <a class="nav-link" href="#symptoms">Symptoms</a>
+          <a class="nav-link" href="#critical-item">Protective Item</a>
+        </nav>
+        </div>
+        <div class="search">
+            <input id="mysearch" name="searchitem" type="search" placeholder="Search...."/>
+        </div>
+        <div class="covid" id="about">
+            <h1 class="text-center">Coronavirus disease 2019</h1>
+            <p>Official names have been announced for the virus responsible for COVID-19 (previously known as “2019 novel coronavirus”) and the disease it causes.  The official names are: <br> <b>Disease</b> <br>coronavirus disease <br> (COVID-19) <br> <b>Virus</b> <br> severe acute respiratory syndrome coronavirus 2 <br>(SARS-CoV-2)</p>
+        </div>
+        <div id="symptoms" class="covid">
+            <h1 class="text-center">What are the symptoms of coronavirus?</h1>
+            <div class="row">
+                <div class="col-xl-7">
+                    <p>Symptoms can include fever, cough and shortness of breath. In more severe cases, infection can cause pneumonia or breathing difficulties. More rarely, the disease can be fatal.</p>
+                    <p> These symptoms are similar to the flu (influenza) or the common cold, which are a lot more common than COVID-19. This is why testing is required to confirm if someone has COVID-19. It’s important to remember that key prevention measures are the same – frequent hand washing, and respiratory hygiene (cover your cough or sneeze with a flexed elbow or tissue, then throw away the tissue into a closed bin).</p>
+                </div>
+                <div class="col-xl-2">
+                    <button onclick="prev()"><</button>
+                    <img id="slider" src="https://media.npr.org/assets/img/2020/01/22/sciencesource_ss2413465-bd5e295079f203794a6d35a99a4db82fa5615d4d-s800-c85.jpg" alt="image-of-corona-virus" class="img-responsive" width="400px" height="250px">
+                    <button onclick="next()">></button>
+                </div>
+            </div>
+        </div>
+        <div id="protection" class="covid">
+            <h1 class="text-center">How can I protect myself and others from COVID-19?</h1>
+            <p>Here are some precautions you and your family can take to help avoid infection:</p>
+            <ul>
+                <li>Wash your hands frequently using soap and water or an alcohol-based hand rub <img src="https://i.guim.co.uk/img/media/c9380b6f890ec2a8be6963f5993c3aa9790fdb00/0_0_3000_1875/master/3000.jpg?width=620&quality=85&auto=format&fit=max&s=5f44a8d6c763fe0f56f4e0aa370907f1" alt="hand-wash-image" class="img-responsive" width="250px"> </li>
+                <li>Cover mouth and nose with flexed elbow or tissue when coughing or sneezing. Dispose of used tissue immediately <img src="https://i.guim.co.uk/img/media/8ab6aa486c97f8e8521fe73ca0219ad3d8427d32/0_0_3001_1875/master/3001.jpg?width=620&quality=85&auto=format&fit=max&s=4a70b79925a756e8288263693d8fc225" alt="sneezing-precaution" class="img-responsive" width="250px"> </li>
+                <li>Avoid close contact with anyone who has cold or flu-like symptoms <img src="https://i.guim.co.uk/img/media/80d44ccf903db423aaf84d96a0e74fd78fa46a94/0_0_6001_3751/master/6001.jpg?width=620&quality=85&auto=format&fit=max&s=f07856a18624e07b7dcbaf478d93b8bd" alt="no-close-contact" class="img-responsive" width="250px"> </li>
+                <li>Regularly clean and disinfect frequently touched surfaces like phones, doorknobs, light switches and countertops <img src="https://gadgetstouse.com/wp-content/uploads/2020/03/phonedisinfect-696x464.jpg" alt="disinfect-gadget" class="img-responsive" width="250px"> </li>
+                <li>Seek medical care early if you or your child has a fever, cough or difficulty breathing <img src="https://i.guim.co.uk/img/media/5399791fde48618190761f4f57cac4d211f8be6f/0_0_6000_3750/master/6000.jpg?width=620&quality=85&auto=format&fit=max&s=216d9a049632930c8985ce9a57508312" alt="seek-medical-help" class="img-responsive" width="250px"> </li>
+            </ul>
+        </div>
+        <div id="what-to-do" class="covid">
+            <h1 class="text-center">What is the best way to wash hands properly?</h1>
+            <div class="row">
+                <div class="col-xl-6">
+                    <ul>
+                        <li> Step 1: Wet hands with running water</li>
+                        <li> Step 2: Apply enough soap to cover wet hands</li>
+                        <li> Step 3: Scrub all surfaces of the hands – including back of hands, between fingers and under nails – for at least 20 seconds.</li>
+                        <li> Step 4: Rinse thoroughly with running water</li>
+                        <li> Step 5: Dry hands with a clean cloth or single-use towel</li>
+                    </ul>
+                </div>
+                <div class="col-xl-3">
+                    <img src="https://i.insider.com/5e611709a9f40c28f00ff4b5?width=1300&format=jpeg&auto=webp" alt="washing-hand" class="img-responsive" width="350px">
+                </div>
+            </div>
+            <p>Wash your hands often, especially before eating; after blowing your nose, coughing, or sneezing; and going to the bathroom. <br> If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol. Always wash hands with soap and water, if hands are visibly dirty.</p>
+        </div>
+        <div id="critical-item" class="covid">
+            <h1 class="text-center">COVID-19 Critical Items List</h1>
+            <div class="row">
+                <div class="col-xl-4">
+                <p><b>PPE:</b></p>
+                    <ul>
+                        <li>Gloves, examination</li>
+                        <li>Gloves, surgical</li>
+                        <li>Goggles, protective</li>
+                        <li>Gown, protective</li>
+                        <li>Face shield</li>
+                        <li>Mask, particulate respirator</li>
+                        <li>Mask, surgical</li>
+                    </ul>
+                </div>
+                <div class="col-xl-4">
+                <p><b>Diagnostic equipment:</b></p>
+                    <ul>
+                        <li>Lab screening test kit</li>
+                        <li>Lab confirmation test kit</li>
+                        <li>RT-PCR kit</li>
+                        <li>Extraction kit</li>
+                        <li>Cartridges for RT-PCR automatic systems</li>
+                        <li>Swab and Viral transport medium</li>
+                    </ul>
+                </div>
+                <div class="col-xl-4">
+                <p><b>Clinical care equipment:</b></p>
+                    <ul>
+                        <li>Pulse oximeter</li>
+                        <li>Concentrator O2, 10L, 230V, 50 Hz + acc.</li>
+                        <li>Nasal oxygen cannula, with prongs,</li>
+                        <li>Ventilator patient, for adult, pediatric w/acc.</li>
+                        <li>CPAP, with tubing and patient interfaces for adult and pediatric, w/acc.</li>
+                        <li>Suction pump, mechanical</li>
+                        <li>High-flow nasal cannula (HFNC) w/acc</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="covid">
+            <h1 class="text-center">How teenagers can protect their mental health during coronavirus (COVID-19)</h1>
+            <h2 class="text-primary">6 strategies for teens facing a new (temporary) normal</h2>
+            <div class="row">
+                <div class="col-xl-8">
+                <p>Being a teenager is difficult no matter what, and the coronavirus disease (COVID-19) is making it even harder. With school closures and cancelled events, many teens are missing out on some of the biggest moments of their young lives — as well as everyday moments like chatting with friends and participating in class. We spoke with expert adolescent psychologist, best-selling author and monthly New York Times columnist Dr. Lisa Damour <em>about what you can do to practice self-care and look after your mental health <a href="https://www.unicef.org/coronavirus/how-teenagers-can-protect-their-mental-health-during-coronavirus-covid-19" target="_blank">Read more</a></em></p>.
+                </div>
+                <div class="col-xl-4">
+                <img src="https://i.pinimg.com/236x/3a/c8/cc/3ac8cc338531b02dbc70bde224023baf.jpg" alt="young-girl" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <div class="video-page">
+            <div class="video">
+            <h1 class="text-center">About COVID-19</h1>
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/ujWFj_6FaMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="form">
+            <h1 class="text-center">Let's hear your voice</h1>
+            <form action="you-can-speak">
+            <label for="name">Name <br>
+                <input type="text" name="name" class="form-control">
+            </label> <br>
+            <label for="email">Email <br>
+                <input type="email" name="email" class="form-control">
+            </label> <br>
+            <label for="message">Message <br>
+                <input type="text" name="message" class="form-control" >
+            </label> <br>
+            <button type="submit" class="btn btn-default btn-primary"><i class="fas fa-paper-plane"></i> Submit</button>
+            </form>
+        </div>
+
+        <blockquote cite="https://www.voicesofyouth.org/covid-19-your-voices-against-stigma-and-discrimination">
+        COVID-19 has already taken so much from us. Don't let it take our humanity too! ~Artjola, Kosovo
+        </blockquote>
+
+        <footer>
+            Developed and designed by <a href="https://www.facebook.com/abiodunoluwagbotemi" target="_blank">GboTemi</a> &copy 2020. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
